@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "properties": {
+    "allowGlobal": {
+      "description": "When true, actions in the global folder are also accessible",
+      "default": false,
+      "type": "boolean"
+    },
+    "includeBuiltin": {
+      "description": "When enabled, actions & hooks created by Botpress will also be available in the UI",
+      "default": false,
+      "type": "boolean"
+    },
+    "includeBotConfig": {
+      "description": "When enabled, bot configurations are also editable on the UI",
+      "default": false,
+      "type": "boolean"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "allowGlobal",
+    "includeBotConfig",
+    "includeBuiltin"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
+
